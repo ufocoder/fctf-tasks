@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Venus
+      </h1>
+      <div class="columns">
+        <div class="column">
+          <form id="form">
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea  id="message" class="textarea" placeholder="Textarea"></textarea>
+              </div>
+            </div>
+            <button class="button">Send</button>
+          </form>
+        </div>
+        <div class="column">
+          <article class="message">
+            <div class="message-header">
+              <p>Response</p>
+            </div>
+            <div class="message-body" id="answer"></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript">
+    const formElement = document.getElementById('form');
+    const answerElement = document.getElementById('answer');
+    const messageElement = document.getElementById('message');
+
+    formElement.addEventListener('submit', e => {
+      e.preventDefault();
+      
+      fetch('/send', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ cmd: messageElement.value.trim() }),
+      })
+      .then(response => response.text())
+      .then(response => {
+        answerElement.innerHTML = response
+      });
+    });
+  </script>
+  </body>
+</html>

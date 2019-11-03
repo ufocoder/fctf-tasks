@@ -1,0 +1,10 @@
+{
+    "alias": ["fctf3-venus.now.sh"],
+    "version": 2,
+	"builds": [
+		{ "src": "app.py", "use": "@now/python" }
+	],
+	"routes": [
+		{ "src": "/(.*)", "dest": "app.py" }
+	]
+}
