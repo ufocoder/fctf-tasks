@@ -1,0 +1,10 @@
+# manifest
+# history
+# html
+# post
+# cookies
+# --
+# troubles? google the intermediate result :)
+#
+User-agent: *
+Disallow: /
