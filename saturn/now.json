@@ -1,6 +1,7 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "index.php", "use": "now-php" }
-    ]
-  }
+  "alias": ["fctf3-saturn.now.sh"],
+  "version": 2,
+  "builds": [
+    { "src": "index.php", "use": "now-php" }
+  ]
+}

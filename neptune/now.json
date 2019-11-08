@@ -1,4 +1,5 @@
 {
+	"alias": ["fctf3-neptune.now.sh"],
     "version": 2,
 	"builds": [
 		{ "src": "app.py", "use": "@now/python" }
