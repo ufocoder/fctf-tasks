@@ -16,6 +16,6 @@ def home():
     if not is_good_ua:
         return "Hey.. use special browser only!"
     elif not is_good_referrer:
-        return "Wait.. http said you not from Boris? Go away!"
+        return "Wait.. http said you are not from Boris? Go away!"
     else:
         return flag
