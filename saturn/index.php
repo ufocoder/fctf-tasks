@@ -22,6 +22,5 @@
     <h2>
       Start think like an search engine
     </h2>
-    <!-- <img src="./image.png"> -->
   </body>
 </html>

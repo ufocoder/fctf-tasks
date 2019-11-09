@@ -2,6 +2,11 @@
   "alias": ["fctf3-saturn.now.sh"],
   "version": 2,
   "builds": [
-    { "src": "index.php", "use": "now-php" }
+    { "src": "index.php", "use": "@now/php" },
+    { "src": "xhr.php", "use": "@now/php" },
+    { "src": "*.json", "use": "@now/static" },
+    { "src": "*.png", "use": "@now/static" },
+    { "src": "*.txt", "use": "@now/static" },
+    { "src": "*.js", "use": "@now/static" }
   ]
 }
