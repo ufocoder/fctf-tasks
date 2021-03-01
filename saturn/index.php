@@ -20,7 +20,7 @@
   </head>
   <body>
     <h2>
-      Start think like an search engine
+      Think like a search engine
     </h2>
   </body>
 </html>

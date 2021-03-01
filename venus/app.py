@@ -4,7 +4,7 @@ from morse import encode_text, decode_text
 app = Flask(__name__)
 
 text_error = 'enter help for all commands'
-text_author = 'there are not the droids you are looking for'
+text_author = 'these are not the droids you are looking for'
 text_help = 'help - the current command. key - key for next task. author - author of the task.'
 
 text_key = "{fctf_mmmmmooorrssse}"
